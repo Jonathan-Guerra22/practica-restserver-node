@@ -7,7 +7,7 @@ const usuariosGet = (req, res = Response) => {
     })
 };
 
-const usuariosPost = (req, res) => {
+const usuariosPost = (req, res = Response) => {
     res.json({
         message: 'post desde el api'
     })
@@ -20,13 +20,13 @@ const usuariosPut = (req, res = Response) => {
     })
 }
 
-const usuariosDelete =  (req, res) => {
+const usuariosDelete =  (req, res = Response) => {
     res.json({
         message: 'delete desde el api'
     })
 }
 
-const usuariosPatch = (req, res) => {
+const usuariosPatch = (req, res = Response) => {
     res.json({
         message: 'patch desde el api'
     })
