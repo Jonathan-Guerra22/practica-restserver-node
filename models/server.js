@@ -14,8 +14,9 @@ class Server {
     }
 
     middleware(){
-        this.app.use(cors());
-        this.app.use(express.static('public'))
+        this.app.use( cors() );
+        this.app.use( express.json() ); // transforma toda la info que llega a JSON
+        this.app.use( express.static('public') )
     }
 
 
